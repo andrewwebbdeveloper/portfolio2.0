@@ -1,20 +1,90 @@
 // Utilities index
-import React from 'react';
 import memorize from '../img/Memorize-me.png';
 import bankofmagic from '../img/bankofmagic.png';
 import forkify from '../img/forkify.png';
 import socodumps from '../img/socodumps.png';
 import businessclass from '../img/businessclass.png';
+import adobeXD from '../img/tech/Adobe_XD.svg';
+import Css3 from '../img/tech/CSS3.svg';
+import git from '../img/tech/git.svg';
+import html5 from '../img/tech/HTML5.svg';
+import JavaScript from '../img/tech/JavaScript.svg';
+import Netlify from '../img/tech/Netlify.svg';
+import react from '../img/tech/react.svg';
+import redux from '../img/tech/redux.svg';
+import Sass from '../img/tech/Sass.svg';
+import Firebase from '../img/tech/Firebase.svg';
+import gatsby from '../img/tech/gatsby.png';
+import styled from '../img/tech/styled.png';
+
+export const techList = [
+  {
+    id: 4,
+    name: 'html5',
+    image: html5,
+  },
+  {
+    id: 2,
+    name: 'Css3',
+    image: Css3,
+  },
+  {
+    id: 5,
+    name: 'JavaScript',
+    image: JavaScript,
+  },
+  {
+    id: 7,
+    name: 'react',
+    image: react,
+  },
+  {
+    id: 3,
+    name: 'git',
+    image: git,
+  },
+  {
+    id: 6,
+    name: 'Netlify',
+    image: Netlify,
+  },
+  {
+    id: 8,
+    name: 'redux',
+    image: redux,
+  },
+  {
+    id: 9,
+    name: 'Sass',
+    image: Sass,
+  },
+  {
+    id: 10,
+    name: 'Firebase',
+    image: Firebase,
+  },
+  {
+    id: 11,
+    name: 'gatsby',
+    image: gatsby,
+  },
+  {
+    id: 12,
+    name: 'styled',
+    image: styled,
+  },
+  {
+    id: 1,
+    name: 'adobeXD',
+    image: adobeXD,
+  },
+];
 
 export const color = ['#ececec', '#9fd3c7', '#385170', '#142d4c'];
 
 export const titleFont = "font-family:'Bungee Shade', cursive;";
 
 export const font = 'font-family: "Montserrat", sans-serif';
-
-export const titleFontSize = '10vmax';
-
-export const subtitleFontSize = '8vmax';
 
 export const projectList = [
   {

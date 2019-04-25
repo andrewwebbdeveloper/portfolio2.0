@@ -6,7 +6,6 @@ import { color, projectList } from './utilities';
 const ProjectsArea = styled.section`
   background: ${color[1]};
   height: min-content;
-  padding: 3rem;
   max-width: 100vw;
   display: flex;
   flex-direction: column;

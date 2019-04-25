@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import { color, font } from './utilities';
 
 const AboutArea = styled.section`
-  overflow: hidden;
   background: ${color[3]};
   height: 50rem;
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

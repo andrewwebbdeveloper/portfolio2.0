@@ -5,8 +5,9 @@ import { color, font } from './utilities';
 const ProjectArea = styled.div`
   overflow: hidden;
   margin: 3rem;
+  margin-top: 5rem; 
   background: ${color[0]};
-  width: 95%;
+  width: 90%;
   height: 35rem;
   display: grid;
   grid-template-columns: 40% 60%;
@@ -57,8 +58,8 @@ const ProjectArea = styled.div`
   
   
   h3 {
-    margin-left: 1rem;
-    margin-top: 1rem; 
+    margin: 1rem; 
+    margin-bottom: 0;  
     ${font};
     padding: 1rem;   
     color: ${color[2]}; 
@@ -77,15 +78,16 @@ const ProjectArea = styled.div`
     ${font}
     color: ${color[3]}; 
     font-weight: 400; 
-    font-size: 2vmax; 
+    font-size: 1.8rem; 
     letter-spacing: 0.1rem;
     width: 70%;
     
     transform: translateX(13%);
   }
   .link-container {
+    justify-self: left; 
     z-index: 20; 
-    margin-top: 3rem; 
+    margin-top: 0; 
     grid-row: 3; 
     grid-column: 1; 
     display: flex;
@@ -99,16 +101,17 @@ const ProjectArea = styled.div`
     justify-self: center; 
     color: ${color[2]};
     margin: 1rem; 
-    transition: all ease-in-out 0.2s; 
+    transition: all ease-in-out 0.1s; 
     
   }
   a:hover, i:hover {
     color: ${color[1]}; 
+    transform: scale(1.1); 
   }
   i {
     
       color: ${color[2]}; 
-      transition: all ease-in-out 0.3s; 
+      transition: all ease-in-out 0.1s; 
 
     }
   
@@ -132,10 +135,16 @@ const Project = (props) => {
       <div>
         <h3>{title}</h3>
         <div className="link-container">
-          <a href={github}>
+          <a target="_blank" rel="noreferrer noopener" href={github}>
             <i className="devicon-github-plain-wordmark" />
           </a>
-          <a href={url} alt={title} className="site-link">
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href={url}
+            alt={title}
+            className="site-link"
+          >
             Go to Site &rarr;
           </a>
         </div>
