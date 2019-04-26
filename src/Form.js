@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Formik } from 'formik';
 
 import { color, font, titleFont } from './utilities';
+import device from './utilities/media';
 
 const FormArea = styled.div`
   margin-top: -40rem;
@@ -14,6 +15,17 @@ const FormArea = styled.div`
   justify-self: center;
   justify-content: center;
   align-items: center;
+
+  @media ${device.mobileM} {
+    padding: 5rem 0 1rem 0;
+  }
+
+  @media ${device.desktop} {
+    height: 70rem;
+  }
+  @media ${device.desktopL} {
+    height: 70rem;
+  }
 
   .hidden {
     display: none;
@@ -28,12 +40,26 @@ const FormArea = styled.div`
     margin: 1rem;
     margin-top: 20rem;
     padding: 0;
+
+    @media ${device.tablet} {
+      font-size: 4rem;
+    }
+    @media ${device.mobileM} {
+      font-size: 3rem;
+    }
+
+    @media ${device.desktop} {
+      font-size: 9rem;
+    }
+    @media ${device.desktopL} {
+      font-size: 9rem;
+    }
   }
 
   form {
     ${font};
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
   }
 
   input {
@@ -49,6 +75,16 @@ const FormArea = styled.div`
     padding: 0.2rem;
     padding-left: 1rem;
     margin: 1rem;
+
+    @media ${device.tablet} {
+      grid-column: 1 / span 2;
+    }
+    @media ${device.desktop} {
+      min-height: 4rem;
+    }
+    @media ${device.desktopL} {
+      min-height: 4rem;
+    }
   }
   textarea {
     ${font};
@@ -59,6 +95,13 @@ const FormArea = styled.div`
     width: auto;
     padding: 1rem;
     margin: 1rem;
+
+    @media ${device.desktop} {
+      min-height: 15rem;
+    }
+    @media ${device.desktopL} {
+      min-height: 15rem;
+    }
   }
 
   button {
@@ -74,6 +117,16 @@ const FormArea = styled.div`
     padding: 1rem;
     border: 0.3rem solid ${color[3]};
     transition: all ease 0.1s;
+
+    @media ${device.mobileM} {
+      width: 15rem;
+    }
+    @media ${device.desktop} {
+      width: 30rem;
+    }
+    @media ${device.desktopL} {
+      width: 30rem;
+    }
 
     &: hover {
       color: ${color[2]};

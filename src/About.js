@@ -1,26 +1,51 @@
 import React from 'react';
 import styled from 'styled-components';
 import { color, font } from './utilities';
+import device from './utilities/media';
 
 const AboutArea = styled.section`
   background: ${color[3]};
-  height: 50rem;
+  height: min-content;
   max-width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-evenly;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-  transform: translateY(-7.5rem);
+  margin-top: -7rem;
+  margin-bottom: 10rem;
+  padding-bottom: 8rem;
+
+  @media ${device.desktop} {
+    margin-top: -13rem;
+    padding: 10rem;
+  }
+  @media ${device.desktopL} {
+    margin-top: -13rem;
+    padding: 10rem;
+  }
 `;
 
 const AboutText = styled.h4`
-  padding: 7rem;
+  padding: 9rem;
   ${font};
-  font-size: 5vmax;
+  font-size: 3vmax;
   font-weight: 300;
   color: ${color[0]};
+  max-width: 40rem;
+
+  @media ${device.tablet} {
+    font-size: 1.8rem;
+    padding: 5rem 2rem;
+    max-width: 90%;
+  }
+  @media ${device.desktop} {
+    max-width: 60rem;
+  }
+  @media ${device.desktopL} {
+    max-width: 60rem;
+  }
 `;
 
 const About = () => (

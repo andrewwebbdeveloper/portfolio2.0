@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Project from './Project';
 import { color, projectList } from './utilities';
+import device from './utilities/media';
 
 const ProjectsArea = styled.section`
   background: ${color[1]};
   height: min-content;
+
   max-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -26,16 +28,36 @@ const ProjectsArea = styled.section`
     100% 100%,
     0 100%
   );
-  transform: translateY(-14.5rem);
+  margin-top: -20rem;
+  margin-bottom: 9rem;
+  padding-bottom: 9rem;
+
+  @media ${device.tablet} {
+    margin-bottom: 15rem;
+    padding: 0;
+  }
+  @media ${device.laptopL} {
+    margin-top: -24rem;
+    padding-top: 10rem;
+  }
 `;
 
 const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 7rem 3rem 3rem 3rem;
+  justify-content: center;
+  margin: 9rem 3rem 3rem 3rem;
   width: 98%;
   height: 90%;
+
+  @media ${device.tablet} {
+    width: 100%;
+    margin: 9rem 0 3rem 0;
+  }
+  @media ${device.laptopL} {
+    width: 90%;
+  }
 `;
 
 const Projects = () => {

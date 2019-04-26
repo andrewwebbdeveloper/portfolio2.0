@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { color, techList } from './utilities';
+import device from './utilities/media';
 
 const TechsArea = styled.section`
   display: grid;
@@ -14,8 +15,19 @@ const TechsArea = styled.section`
   clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0 95%, 0 5%);
   transform: translate(0rem, -17rem);
 
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   padding: 5rem 0 5rem 0;
+
+  @media ${device.tablet} {
+    grid-template-columns: repeat(3, 1fr);
+    transform: translate(0rem, -17.5rem);
+  }
+  @media ${device.desktop} {
+    height: 90rem;
+  }
+  @media ${device.desktopL} {
+    height: 90rem;
+  }
 `;
 
 const Tech = styled.div`
@@ -29,6 +41,12 @@ const Tech = styled.div`
     transition: all ease 1s;
     &:hover {
       transform: blur(1);
+    }
+    @media ${device.desktop} {
+      width: 100%;
+    }
+    @media ${device.desktopL} {
+      width: 100%;
     }
   }
   &:hover,
