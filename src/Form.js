@@ -158,7 +158,7 @@ const Form = () => (
       }}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+          // alert(JSON.stringify(values, null, 2));
           setSubmitting(false);
         }, 400);
       }}
@@ -188,7 +188,7 @@ const Form = () => (
           </p>
           <input
             required
-            type="name"
+            type="text"
             name="name"
             placeholder="Name"
             onChange={handleChange}
@@ -207,7 +207,6 @@ const Form = () => (
           />
           {errors.email && touched.email}
           <textarea
-            type="message"
             name="message"
             placeholder="Message"
             onChange={handleChange}
