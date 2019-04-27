@@ -39,9 +39,7 @@ const Tech = styled.div`
     height: auto;
     width: 70%;
     transition: all ease 1s;
-    &:hover {
-      transform: blur(1);
-    }
+
     @media ${device.desktop} {
       width: 100%;
     }
