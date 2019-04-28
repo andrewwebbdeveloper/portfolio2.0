@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Formik } from 'formik';
+// import { Formik } from 'formik';
+import PDF from './Andrew_Webb_Resume.pdf';
 
 import { color, font, titleFont } from './utilities';
 import device from './utilities/media';
@@ -26,7 +27,9 @@ const FormArea = styled.div`
   @media ${device.desktopL} {
     height: 70rem;
   }
-
+  a {
+    justify-self: center;
+  }
   .hidden {
     display: none;
   }
@@ -106,9 +109,9 @@ const FormArea = styled.div`
 
   button {
     text-transform: uppercase;
-    grid-column: 1 / span 2;
+
     justify-self: center;
-    width: 20rem;
+    width: min-content;
     ${font};
     color: ${color[3]};
     font-weight: 700;
@@ -128,7 +131,7 @@ const FormArea = styled.div`
       width: 30rem;
     }
 
-    &: hover {
+    &:hover {
       color: ${color[2]};
       border: 0.3rem solid ${color[1]};
     }
@@ -140,10 +143,45 @@ const FormArea = styled.div`
   }
 `;
 
+const FooterResumeButton = styled.button`
+  justify-self: center;
+  width: min-content;
+  padding: 1rem;
+`;
+
+const LinkButton = styled.a`
+  text-decoration: none;
+  font-size: 5rem;
+  justify-self: center;
+  color: ${color[2]};
+  margin-bottom: 1rem;
+  transition: all ease-in-out 0.1s;
+
+  &:hover {
+    color: ${color[1]};
+  }
+`;
+
 const Form = () => (
   <FormArea>
     <h2>Contact</h2>
-    <Formik
+    <LinkButton
+      className="far fa-envelope"
+      href="mailto:drewbird87@gmail.com"
+    />
+
+    <LinkButton
+      className="fab fa-linkedin"
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://www.linkedin.com/in/andrew-webb-web-developer"
+    />
+
+    <a href={PDF} target="_blank" rel="noopener noreferrer">
+      <FooterResumeButton>RESUME</FooterResumeButton>
+    </a>
+
+    {/* <Formik
       initialValues={{ name: '', email: '', message: '' }}
       validate={(values) => {
         const errors = {};
@@ -171,7 +209,7 @@ const Form = () => (
         handleBlur,
         handleSubmit,
         isSubmitting,
-        /* and other goodies */
+
       }) => (
         <form
           name="contact"
@@ -220,7 +258,7 @@ const Form = () => (
           </button>
         </form>
       )}
-    </Formik>
+    </Formik>  */}
   </FormArea>
 );
 
