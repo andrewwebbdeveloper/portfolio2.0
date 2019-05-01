@@ -15,13 +15,14 @@ const ProjectArea = styled.div`
   z-index: 10; 
   
   
+  
   @media ${device.tablet} {
     margin: .5rem;
     grid-auto-flow: row; 
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     width: 100%;  
-    height: min-content; 
+    height: 30rem; 
   }
   @media ${device.laptopL} {
     height: 40rem; 
@@ -135,6 +136,10 @@ const ProjectArea = styled.div`
     font-size: 3rem; 
     text-align: center; 
 
+    @media screen and ${device.mobileM} {
+      font-size: 3rem;
+      padding: 1.5rem; 
+   }
     @media screen and ${device.tablet} {
       font-size: 3.5rem; 
    }
@@ -164,6 +169,11 @@ const ProjectArea = styled.div`
     
     transform: translateX(2rem);
     
+    @media screen and ${device.mobileM} {
+    width: 80%; 
+    font-size: .9rem; 
+    transform: none;
+  }
     @media screen and ${device.tablet} {
     width: 80%; 
     font-size: 1.1rem; 
@@ -192,7 +202,12 @@ const ProjectArea = styled.div`
     align-items: center; 
     transform: translateX(3rem);
 
-    @media screen and ${device.tablet} {
+    @media ${device.mobileM} {
+      font-size: 1.5rem; 
+      transform: none;
+      margin:0; 
+   }
+    @media ${device.tablet} {
       font-size: 1.5rem; 
       transform: none;
       margin: 0 0 1rem 0; 

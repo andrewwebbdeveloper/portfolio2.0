@@ -71,8 +71,8 @@ const ResumeButtonWrapper = styled.div`
 const ResumeButton = styled.button`
   position: absolute;
   text-transform: uppercase;
-  right: 3rem;
-  top: 1rem;
+  right: 2rem;
+  top: 2rem;
   width: 7rem;
   height: 3rem;
   ${font};
@@ -84,6 +84,11 @@ const ResumeButton = styled.button`
   border: 0.3rem solid ${color[3]};
   transition: all ease 0.1s;
   z-index: 100;
+
+  @media ${device.tablet} {
+    right: 1rem;
+    top: 1rem;
+  }
 
   &:hover {
     color: ${color[2]};
