@@ -64,21 +64,23 @@ const SubTitle = styled.h2`
 
 const ResumeButtonWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
+  margin-right: 1rem;
+  position: relative;
 `;
 const ResumeButton = styled.button`
   position: absolute;
   text-transform: uppercase;
-  right: 1rem;
+  right: 3rem;
   top: 1rem;
-  width: min-content;
-  height: min-content;
+  width: 7rem;
+  height: 3rem;
   ${font};
   color: ${color[3]};
   font-weight: 700;
-  font-size: 1.8vmax;
+  font-size: 0.8rem;
   text-align: center;
-  padding: 0.8rem;
+
   border: 0.3rem solid ${color[3]};
   transition: all ease 0.1s;
   z-index: 100;
