@@ -22,7 +22,7 @@ const ProjectArea = styled.div`
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     width: 100%;  
-    height: 30rem; 
+    height: 35rem; 
   }
   @media ${device.laptopL} {
     height: 40rem; 
@@ -252,10 +252,8 @@ const ProjectArea = styled.div`
   }
   `;
 
-const Project = (props) => {
-  const {
- key, image, title, github, url, description 
-} = props;
+const Project = props => {
+  const { key, image, title, github, url, description } = props;
   return (
     <ProjectArea key={key} className="project-container">
       <img src={image} alt={title} />
