@@ -119,7 +119,7 @@ export const projectList = [
     title: 'Bank of Magic',
     image: bankofmagic,
     github: 'https://github.com/andrewwebbdeveloper/Bank-of-Magic',
-    url: 'https://bank-of-magic.netlify.com/login?redirect=%2F',
+    url: 'https://bank-of-magic.netlify.com/register',
     description:
       'A Create, Read, Update, Delete application for managing users and balances for wizard bank accounts. Uses: React, Redux, NPM, React Router, Axios, Firebase, and Bootstrap 4',
   },
