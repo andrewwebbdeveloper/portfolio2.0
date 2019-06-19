@@ -5,9 +5,9 @@ import forkify from '../img/forkify.png';
 import socodumps from '../img/socodumps.png';
 import businessclass from '../img/businessclass.png';
 import adobeXD from '../img/tech/Adobe_XD.svg';
-import Css3 from '../img/tech/CSS3.svg';
+import Css3 from '../img/tech/CSS3.png';
 import git from '../img/tech/git.svg';
-import html5 from '../img/tech/HTML5.svg';
+import html5 from '../img/tech/HTML5.png';
 import JavaScript from '../img/tech/JavaScript.svg';
 import Netlify from '../img/tech/Netlify.svg';
 import react from '../img/tech/react.svg';
@@ -16,6 +16,10 @@ import Sass from '../img/tech/Sass.svg';
 import Firebase from '../img/tech/Firebase.svg';
 import gatsby from '../img/tech/gatsby.png';
 import styled from '../img/tech/styled.png';
+import foundationEmail from '../img/tech/inky-big.svg';
+import mjml from '../img/tech/mjml-logo.png';
+import vscode from '../img/tech/vs-code-icon.png';
+import handlebars from '../img/tech/handlebars_logo.png';
 
 export const techList = [
   {
@@ -77,6 +81,26 @@ export const techList = [
     id: 1,
     name: 'adobeXD',
     image: adobeXD,
+  },
+  {
+    id: 13,
+    name: 'foundationEmail',
+    image: foundationEmail,
+  },
+  {
+    id: 14,
+    name: 'mjml',
+    image: mjml,
+  },
+  {
+    id: 15,
+    name: 'vscode',
+    image: vscode,
+  },
+  {
+    id: 16,
+    name: 'handlebars',
+    image: handlebars,
   },
 ];
 

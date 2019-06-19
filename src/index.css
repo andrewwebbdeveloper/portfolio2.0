@@ -37,3 +37,30 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+
+/* Tooltip addon for Techs */
+
+div.tooltip::before {
+  content: attr(data-tip);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  z-index: 999;
+  white-space: nowrap;
+  bottom: 9999px;
+  left: 50%;
+  background: #ececec;
+  color: #142d4c;
+  padding: 0px 7px;
+  line-height: 24px;
+  height: 24px;
+
+  opacity: 0;
+  transition: opacity 0.4s ease 1s;
+}
+
+div.tooltip:hover::before {
+  opacity: 1;
+  bottom: -35px;
+}

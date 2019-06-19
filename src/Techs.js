@@ -16,7 +16,7 @@ const TechsArea = styled.section`
   transform: translate(0rem, -17rem);
 
   grid-gap: 1rem;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem;
 
   @media ${device.tablet} {
     grid-template-columns: repeat(3, 1fr);
@@ -31,6 +31,7 @@ const TechsArea = styled.section`
 `;
 
 const Tech = styled.div`
+  position: relative;
   justify-self: center;
   align-self: center;
   align-text: center;
@@ -62,7 +63,7 @@ const Techs = () => {
   return (
     <TechsArea>
       {techImages.map(tech => (
-        <Tech key={tech.id}>
+        <Tech key={tech.id} className="tooltip" data-tip={tech.name}>
           <img src={tech.image} alt={tech.name} />
         </Tech>
       ))}
