@@ -252,11 +252,13 @@ const ProjectArea = styled.div`
   }
   `;
 
-const Project = props => {
-  const { key, image, title, github, url, description } = props;
+const Project = (props) => {
+  const {
+ key, image, title, github, url, description 
+} = props;
   return (
     <ProjectArea key={key} className="project-container">
-      <img src={image} alt={title} />
+      <img src={image} alt={title} loading="lazy" />
       <div>
         <h3>{title}</h3>
         <div className="link-container">

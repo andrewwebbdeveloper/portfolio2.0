@@ -64,7 +64,7 @@ const Techs = () => {
     <TechsArea>
       {techImages.map(tech => (
         <Tech key={tech.id} className="tooltip" data-tip={tech.name}>
-          <img src={tech.image} alt={tech.name} />
+          <img src={tech.image} alt={tech.name} loading="lazy" />
         </Tech>
       ))}
     </TechsArea>
