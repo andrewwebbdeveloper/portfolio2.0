@@ -144,6 +144,7 @@ const FormArea = styled.div`
 `;
 
 const FooterResumeButton = styled.button`
+  text-decoration: uppercase;
   justify-self: center;
   width: min-content;
   padding: 1rem;
@@ -178,7 +179,7 @@ const Form = () => (
     />
 
     <a href={PDF} target="_blank" rel="noopener noreferrer">
-      <FooterResumeButton>RESUME</FooterResumeButton>
+      <FooterResumeButton>résumé</FooterResumeButton>
     </a>
 
     {/* <Formik

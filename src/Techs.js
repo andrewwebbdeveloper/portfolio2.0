@@ -20,7 +20,7 @@ const TechsArea = styled.section`
 
   @media ${device.tablet} {
     grid-template-columns: repeat(3, 1fr);
-    transform: translate(0rem, -17.5rem);
+    transform: translate(0rem, -19.5rem);
   }
   @media ${device.desktop} {
     height: 90rem;
