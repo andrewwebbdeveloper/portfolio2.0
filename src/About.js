@@ -51,8 +51,8 @@ const AboutText = styled.h4`
 const About = () => (
   <AboutArea>
     <AboutText>
-      A curious, self-teaching developer focused on creating sensible solutions
-      with suitable web technologies.
+      A curious, creative, clean-code developer focused on making the best
+      solutions for the problems at hand with the future in mind.
     </AboutText>
   </AboutArea>
 );
