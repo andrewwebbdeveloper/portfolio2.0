@@ -104,7 +104,22 @@ export const techList = [
   },
 ];
 
-export const color = ['#ececec', '#9fd3c7', '#385170', '#142d4c'];
+const palettes = [
+  ['#ececec', '#9fd3c7', '#385170', '#142d4c'],
+  ['#DEF2F1', '#3AAFA9', '#2B7A78', '#17252A'],
+  ['#F2F2F2', '#3B945E', '#57BA98', '#182628'],
+  ['#ebecf1', '#206a5d', '#1f4068', '#1b1c25'],
+  ['#f4f6ff', '#fbd46d', '#4f8a8b', '#07031a'],
+  ['#f1ebbb', '#b5076b', '#5c2a9d', '#45046a'],
+  ['#10375c', '#844685', '#f3c623', '#faf4ff'],
+  ['#5f6caf', '#ffb677', '#ff8364', '#edf7fa'],
+  ['#fff1cf', '#ffd369', '#263f44', '#015668'],
+];
+
+const getRandomPalette = () =>
+  palettes[Math.floor(Math.random() * Math.floor(palettes.length))];
+
+export const color = getRandomPalette();
 
 export const titleFont = "font-family:'Bungee Shade', cursive;";
 
