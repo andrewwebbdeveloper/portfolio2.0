@@ -179,7 +179,7 @@ const Form = () => (
     />
 
     <a href={PDF} target="_blank" rel="noopener noreferrer">
-      <FooterResumeButton>résumé</FooterResumeButton>
+      <FooterResumeButton>Resume</FooterResumeButton>
     </a>
 
     {/* <Formik

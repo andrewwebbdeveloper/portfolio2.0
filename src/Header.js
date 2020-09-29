@@ -105,7 +105,7 @@ const Header = () => (
   <>
     <ResumeButtonWrapper>
       <a href={PDF} target="_blank" rel="noopener noreferrer">
-        <ResumeButton>résumé</ResumeButton>
+        <ResumeButton>Resume</ResumeButton>
       </a>
     </ResumeButtonWrapper>
     <HeaderArea>

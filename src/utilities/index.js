@@ -16,10 +16,10 @@ import Sass from '../img/tech/Sass.svg';
 import Firebase from '../img/tech/Firebase.svg';
 import gatsby from '../img/tech/gatsby.png';
 import styled from '../img/tech/styled.png';
-import foundationEmail from '../img/tech/inky-big.svg';
-import mjml from '../img/tech/mjml-logo.png';
+import jquery from '../img/tech/jquery.svg';
+import Jira from '../img/tech/Jira.svg';
+import Bitbucket from '../img/tech/Bitbucket.svg';
 import vscode from '../img/tech/vs-code-icon.png';
-import handlebars from '../img/tech/handlebars_logo.png';
 
 export const techList = [
   {
@@ -46,6 +46,11 @@ export const techList = [
     id: 3,
     name: 'git',
     image: git,
+  },
+  {
+    id: 13,
+    name: 'Bitbucket',
+    image: Bitbucket,
   },
   {
     id: 6,
@@ -83,14 +88,9 @@ export const techList = [
     image: adobeXD,
   },
   {
-    id: 13,
-    name: 'foundationEmail',
-    image: foundationEmail,
-  },
-  {
     id: 14,
-    name: 'mjml',
-    image: mjml,
+    name: 'Jira',
+    image: Jira,
   },
   {
     id: 15,
@@ -99,8 +99,8 @@ export const techList = [
   },
   {
     id: 16,
-    name: 'handlebars',
-    image: handlebars,
+    name: 'jQuery',
+    image: jquery,
   },
 ];
 
