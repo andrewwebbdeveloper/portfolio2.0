@@ -1,3 +1,4 @@
+/* eslint-disable arrow-parens */
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { color, techList } from './utilities';
@@ -62,9 +63,9 @@ const Techs = () => {
 
   return (
     <TechsArea>
-      {techImages.map(tech => (
+      {techImages.map((tech) => (
         <Tech key={tech.id} className="tooltip" data-tip={tech.name}>
-          <img src={tech.image} alt={tech.name} loading="lazy" />
+          <img src={tech.image} alt={tech.name} />
         </Tech>
       ))}
     </TechsArea>
