@@ -8,7 +8,7 @@ const ProjectArea = styled.div`
   margin: 3rem;
   margin-top: 5rem;
   background: ${color[0]};
-  width: 90%;
+  width: 90vw;
   height: 33rem;
   display: grid;
   grid-template-columns: 40% 65%;
@@ -19,7 +19,7 @@ const ProjectArea = styled.div`
     grid-auto-flow: row;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-    width: 100%;
+    width: 100vw;
     height: 35rem;
   }
   @media ${device.laptopL} {
@@ -106,7 +106,7 @@ const ProjectArea = styled.div`
     justify-content: center;
     grid-auto-flow: row;
 
-    @media screen and ${device.tablet} {
+    @media ${device.tablet} {
       grid-column: 1;
       clip-path: none;
     }
@@ -127,11 +127,11 @@ const ProjectArea = styled.div`
     font-size: 3rem;
     text-align: center;
 
-    @media screen and ${device.mobileM} {
+    @media ${device.mobileM} {
       font-size: 3rem;
       padding: 1.5rem;
     }
-    @media screen and ${device.tablet} {
+    @media ${device.tablet} {
       font-size: 3.5rem;
     }
     @media ${device.laptop} {
@@ -183,12 +183,12 @@ const ProjectArea = styled.div`
 
     transform: translateX(2rem);
 
-    @media screen and ${device.mobileM} {
+    @media ${device.mobileM} {
       width: 80%;
       font-size: 0.9rem;
       transform: none;
     }
-    @media screen and ${device.tablet} {
+    @media ${device.tablet} {
       width: 80%;
       font-size: 1.1rem;
       transform: none;
@@ -226,7 +226,7 @@ const ProjectArea = styled.div`
   }
   i {
     color: ${color[2]};
-    transition: all ease-in-out 0.1s;
+    transition: color ease-in-out 0.1s;
   }
 
   .site-link {

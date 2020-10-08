@@ -21,6 +21,7 @@ const TechsArea = styled.section`
 
   @media ${device.tablet} {
     grid-template-columns: repeat(3, 1fr);
+    /* Move up. */
     transform: translate(0rem, -19.5rem);
   }
   @media ${device.desktop} {
@@ -35,7 +36,6 @@ const Tech = styled.div`
   position: relative;
   justify-self: center;
   align-self: center;
-  align-text: center;
 
   img {
     height: auto;
