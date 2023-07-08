@@ -4,22 +4,14 @@ import bankofmagic from '../img/bankofmagic.png';
 import forkify from '../img/forkify.png';
 import socodumps from '../img/socodumps.png';
 import businessclass from '../img/businessclass.png';
-import adobeXD from '../img/tech/Adobe_XD.svg';
 import Css3 from '../img/tech/CSS3.png';
 import git from '../img/tech/git.svg';
 import html5 from '../img/tech/HTML5.png';
 import JavaScript from '../img/tech/JavaScript.svg';
-import Netlify from '../img/tech/Netlify.svg';
 import react from '../img/tech/react.svg';
-import redux from '../img/tech/redux.svg';
 import Sass from '../img/tech/Sass.svg';
-import Firebase from '../img/tech/Firebase.svg';
-import gatsby from '../img/tech/gatsby.png';
 import styled from '../img/tech/styled.png';
 import jquery from '../img/tech/jquery.svg';
-import Jira from '../img/tech/Jira.svg';
-import Bitbucket from '../img/tech/Bitbucket.svg';
-import vscode from '../img/tech/vs-code-icon.png';
 import tailwindcss from '../img/tech/tailwindcss.svg'
 import vuejs from '../img/tech/vuejs.svg'
 
