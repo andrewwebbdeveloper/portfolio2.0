@@ -20,10 +20,12 @@ import jquery from '../img/tech/jquery.svg';
 import Jira from '../img/tech/Jira.svg';
 import Bitbucket from '../img/tech/Bitbucket.svg';
 import vscode from '../img/tech/vs-code-icon.png';
+import tailwindcss from '../img/tech/tailwindcss.svg'
+import vuejs from '../img/tech/vuejs.svg'
 
 export const techList = [
   {
-    id: 4,
+    id: 1,
     name: 'html5',
     image: html5,
   },
@@ -33,72 +35,38 @@ export const techList = [
     image: Css3,
   },
   {
-    id: 5,
+    id: 3,
     name: 'JavaScript',
     image: JavaScript,
   },
   {
-    id: 7,
+    id: 4, name: 'vue', image: vuejs,
+  },
+  {
+    id: 5, name: 'tailwind', image: tailwindcss,
+  },
+  {
+    id: 6,
     name: 'react',
     image: react,
   },
   {
-    id: 3,
+    id: 7,
     name: 'git',
     image: git,
   },
   {
-    id: 13,
-    name: 'Bitbucket',
-    image: Bitbucket,
-  },
-  {
-    id: 6,
-    name: 'Netlify',
-    image: Netlify,
-  },
-  {
     id: 8,
-    name: 'redux',
-    image: redux,
-  },
-  {
-    id: 9,
     name: 'Sass',
     image: Sass,
   },
   {
-    id: 10,
-    name: 'Firebase',
-    image: Firebase,
-  },
-  {
-    id: 11,
-    name: 'gatsby',
-    image: gatsby,
-  },
-  {
-    id: 12,
+    id: 9,
     name: 'styled',
     image: styled,
   },
   {
-    id: 1,
-    name: 'adobeXD',
-    image: adobeXD,
-  },
-  {
-    id: 14,
-    name: 'Jira',
-    image: Jira,
-  },
-  {
-    id: 15,
-    name: 'vscode',
-    image: vscode,
-  },
-  {
-    id: 16,
+    id: 10,
     name: 'jQuery',
     image: jquery,
   },
